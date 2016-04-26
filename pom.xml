@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<modelVersion>4.0.0</modelVersion>
+	
+  <parent>
+    <groupId>by.burim</groupId>
+    <artifactId>doing</artifactId>
+    <version>${doing.version}</version>
+  </parent>
+  
+  
+  <artifactId>doing-web-user</artifactId>
+  <packaging>war</packaging>
+  <version>${doing.version}</version>
+  <name>doing-web-user Maven Webapp</name>
+  
+  <dependencies>
+		<dependency>
+			<groupId>by.burim</groupId>
+			<artifactId>doing-service</artifactId>
+			<version>${doing.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>by.burim</groupId>
+			<artifactId>doing-dao</artifactId>
+			<version>${doing.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>by.burim</groupId>
+			<artifactId>doing-security</artifactId>
+			<version>${doing.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>${servlet-api.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>${jstl.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		
+	</dependencies>
+
+	<build>
+		<finalName>doing-web-user</finalName>
+	</build>
+
+</project>

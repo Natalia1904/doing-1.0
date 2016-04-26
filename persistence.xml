@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="1.0">
+	<persistence-unit name="event_unit">
+		<class>by.burim.doing.entities.Address</class>
+		<class>by.burim.doing.entities.City</class>
+		<class>by.burim.doing.entities.Event</class>
+		<class>by.burim.doing.entities.Role</class>
+		<class>by.burim.doing.entities.Street</class>
+		<class>by.burim.doing.entities.User</class>
+
+		<properties>
+			<property name="hibernate.enable_lazy_load_no_trans" value="true" />
+		</properties>
+	</persistence-unit>
+</persistence>
